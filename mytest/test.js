@@ -6,7 +6,7 @@ fixture `Hello World`
 // Tests
 test('Display Hello World', async t => {
     await t
-        .expect(Selector('div.helloworld')).eql('Hello World');            // Check result
+        .expect(Selector('div.helloworld').innerText).eql('Hello World');            // Check result
 });
 
 
